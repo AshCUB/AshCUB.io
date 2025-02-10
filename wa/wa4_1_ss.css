@@ -27,7 +27,7 @@ h2, p{
 }
 .card footer p{
   font-size: 1.5em;
-  line-height: 2em;
+  line-height: 1.5em;
 }
 /* Card container styles */
 .card{
