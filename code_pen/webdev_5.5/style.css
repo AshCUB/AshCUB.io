@@ -10,7 +10,7 @@ textarea {
 }
 
 .form {
-  font-family: system-ui, sans-serif;
+  font-family: Comic Sans MS;
   font-size: 1.2rem;
   display: grid;
   grid-template-columns: auto 1fr;
@@ -18,8 +18,8 @@ textarea {
   border: 1px solid #1f202050;
   border-radius: 0.5em;
   padding: 1em 2em;
-  background: #f9f6ef;
-  color: #1f2020;
+  background: blue;
+  color: white;
   width: min(50ch, 100% - 2rem);
   margin: 0 auto;
 }
