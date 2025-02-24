@@ -1,3 +1,7 @@
+
+
+@media (max-width: 500px)
+{
 body {
     background-color: #fff;
     color: #333;
@@ -39,6 +43,7 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    flex-wrap: wrap;
   }
 
 
@@ -63,10 +68,15 @@ body {
   }
   
   .article, .aside{
-    width: fit-content;
+    flex: 1;
+    padding:20px;
+    box-sizing: border-box;
   }
 
   .photos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1px;
     list-style: none;
     margin: 0;
     padding: 0;
@@ -77,3 +87,95 @@ body {
       margin: 0 1rem 1rem 0;
       float: left;
   }
+
+
+  }
+
+
+
+  @media (min-width: 500px)
+  {
+  body {
+      background-color: #fff;
+      color: #333;
+      margin: 0;
+      font: 1.2em / 1.2 Arial, Helvetica, sans-serif;
+    }
+  
+    .image_hold img{
+      margin-right: 15px;
+    }
+  
+    img {
+        max-width: 100%;
+        display: block;
+    }
+    
+    .logo {
+      font-size: 200%;
+      padding: 50px 20px;
+      margin: 0 auto;
+      max-width: 980px;
+    }
+    
+    .grid {
+      margin: 0 auto;
+      padding: 0 20px;
+      max-width: 980px;
+      display: grid;
+      grid-template-rows:1fr;
+      background-color: #f0f0ff;
+  }
+    
+    
+    .flex-container{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around;
+      flex-wrap: wrap;
+    }
+  
+  
+  
+    nav {
+      background-color: #000;
+      padding: .5em;
+      position: sticky;
+    }
+    
+    nav ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+    
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      padding: .5em 1em;
+    }
+    
+    .article, .aside{
+      flex: 1;
+      padding:20px;
+      box-sizing: border-box;
+    }
+  
+    .photos {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1px;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+  
+    .feature {
+        width: 200px;
+        margin: 0 1rem 1rem 0;
+        float: left;
+    }
+  
+  
+    }
