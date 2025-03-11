@@ -183,6 +183,10 @@ text{
         .VPC{
             font-size: 16pt;
         }
+
+        .CONCERT_1 .PIC_BOX{
+            padding-left: 0px;
+        }
     }
 
 strong{
