@@ -47,9 +47,16 @@ text{
     padding-left: 30px;
 }
 
-.CONCERT_1 .CONCERT_INFO, .CONCERT_1 .CONCERT_NAME, .CONCERT_1 .CONCERT_NUM, .CONCERT_1 .PIC_BOX{
+.CONCERT_1 .CONCERT_INFO, .CONCERT_1 .CONCERT_NAME, .CONCERT_1 .CONCERT_NUM{
     color: #C5D3DD;
     width: 100%;
+}
+
+.CONCERT_1 .PIC_BOX{
+    color: #C5D3DD;
+    width: 100%;
+    text-align: right;
+
 }
 
 .CONCERT_2 .CONCERT_INFO, .CONCERT_2 .CONCERT_NAME, .CONCERT_2 .CONCERT_NUM, .CONCERT_2 .PIC_BOX{
@@ -186,6 +193,13 @@ text{
 
         .CONCERT_1 .PIC_BOX{
             padding-left: 0px;
+        }
+
+        .CONCERT_1 .PIC_BOX{
+            color: #C5D3DD;
+            width: 100%;
+            text-align: left;
+        
         }
     }
 
