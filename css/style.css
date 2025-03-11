@@ -43,6 +43,10 @@ text{
     background-color: #184e77;
 }
 
+.CONCERT_1 .PIC_BOX{
+    padding-left: 30px;
+}
+
 .CONCERT_1 .CONCERT_INFO, .CONCERT_1 .CONCERT_NAME, .CONCERT_1 .CONCERT_NUM, .CONCERT_1 .PIC_BOX{
     color: #C5D3DD;
     width: 100%;
@@ -116,6 +120,7 @@ text{
 
 
 .container .CONCERT_1 .PIC_BOX, .container .CONCERT_2 .PIC_BOX{
+    margin-left: 30px;
     flex:0 0 300px;
     display: flex;
     flex-direction: column;
@@ -132,7 +137,7 @@ text{
     flex: 1;
     display: flex;
     flex-direction: column;
-    margin-right: 30px;
+
 }
 
 @media screen and (max-width: 400px){
@@ -159,6 +164,7 @@ text{
             }
             .PIC_BOX{
                 padding-top: 10px;
+
             }
             .container .CONCERT_2 .CONCERT_NUM,
             .container .CONCERT_2 .CONCERT_NAME,
