@@ -1,0 +1,185 @@
+body{
+    margin: 0;
+}
+
+h1{
+    font-weight:600;
+    color: #C3CCD2;
+}
+
+text{
+    color: rgba(0, 0, 0, 0.112);
+}
+
+.container{
+    font-family: "Neue Haas Grotesk Display Pro";
+    display: flex;
+    flex-direction: column;
+}
+
+.VPC{
+    color: #C3CCD2;
+    display: flex;
+    font-weight:100; 
+    font-style: italic;
+    font-size: 20pt;
+    text-align: right;
+}
+
+
+.container .ZΩRBLAXIAN{
+    font-size: 12pt;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    box-sizing: border-box;
+    flex-direction: row;
+    background-color: #10324c;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.C1{
+    background-color: #184e77;
+}
+
+.CONCERT_1 .CONCERT_INFO, .CONCERT_1 .CONCERT_NAME, .CONCERT_1 .CONCERT_NUM, .CONCERT_1 .PIC_BOX{
+    color: #C5D3DD;
+    width: 100%;
+}
+
+.CONCERT_2 .CONCERT_INFO, .CONCERT_2 .CONCERT_NAME, .CONCERT_2 .CONCERT_NUM, .CONCERT_2 .PIC_BOX{
+    color: #C7D7E3;
+    width: 100%;
+}
+
+.CONCERT_1{
+    background-color: #175381;
+}
+
+.CONCERT_2{
+    background-color: #1a759f;
+}
+
+
+.container .CONCERT_1, .container .CONCERT_2{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    box-sizing: border-box;
+    flex-direction: row;
+}
+
+
+
+
+.container .CONCERT_1 .CONCERT_NUM{
+    font-weight:normal; 
+    font-style: italic;
+    font-size: 10pt;
+}
+
+.container .CONCERT_2 .CONCERT_NUM{
+    font-weight:normal; 
+    font-style: italic;
+    font-size: 10pt;
+    text-align: right;
+}
+
+.container .CONCERT_1 .CONCERT_NAME{
+    font-weight:700;
+    font-style: normal;
+    font-size: 16pt;
+    margin-bottom: 5px;
+}
+
+.container .CONCERT_2 .CONCERT_NAME{
+    font-weight:700;
+    font-style: normal;
+    font-size: 16pt;
+    text-align: right;
+}
+
+.container .CONCERT_1 .CONCERT_INFO{
+    font-size: 12pt;
+    font-weight: 400;
+}
+
+.container .CONCERT_2 .CONCERT_INFO{
+    font-size: 12pt;
+    font-weight: 400;
+    text-align: right;
+}
+
+
+.container .CONCERT_1 .PIC_BOX, .container .CONCERT_2 .PIC_BOX{
+    flex:0 0 300px;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+
+.CONCERT_NAME,.CONCERT_INFO,.CONCERT_INFO{
+    width: 100%;
+}
+
+
+
+.container .LEFT_INFO{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    margin-right: 30px;
+}
+
+@media screen and (max-width: 400px){
+    .container .CONCERT_1, .container .CONCERT_2{
+        flex: 1;
+        display: flex;
+        flex-direction: row;
+        margin-right: 30px;
+    }
+    }
+    
+    @media screen and (min-width: 1500px){
+        .container .CONCERT_1, .container .CONCERT_2{
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            margin-right: 30px;
+        }
+    }
+    
+        @media screen and (width <= 750px) {
+            .container .CONCERT_1, .container .CONCERT_2{
+                flex-direction: column;
+            }
+            .PIC_BOX{
+                padding-top: 10px;
+            }
+            .container .CONCERT_2 .CONCERT_NUM,
+            .container .CONCERT_2 .CONCERT_NAME,
+            .container .CONCERT_2 .CONCERT_INFO {
+        text-align: left;
+
+        }
+        .container .LEFT_INFO{
+            order:-1
+        }
+
+        .container .ZΩRBLAXIAN{
+            font-size: 8pt;
+        }
+
+        .VPC{
+            font-size: 16pt;
+        }
+    }
+
+strong{
+    font-weight:700px;
+}
+
