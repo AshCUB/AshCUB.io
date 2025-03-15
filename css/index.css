@@ -123,6 +123,7 @@ text{
     font-style: italic;
     font-size: 10pt;
     text-align: right;
+    margin-bottom: 5px;
 }
 
 .container .CONCERT_1 .CONCERT_NAME{
