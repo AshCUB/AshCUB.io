@@ -212,6 +212,9 @@ text{
     width: 100%;
 }
 
+.container .CONCERT_2 .CONCERT_NAME{
+    margin-bottom: 5px;
+}
 
 .container .LEFT_INFO{
     flex: 1;
@@ -307,7 +310,8 @@ text{
         }
 
         
-.container .CONCERT_2 .CONCERT_NAME{
+.container .CONCERT_2:hover .CONCERT_NAME{
+    margin-bottom: 5px;
     font-weight:700;
     font-style: normal;
     font-size: 16pt;
@@ -323,7 +327,7 @@ text{
 
 }
 
-.container .CONCERT_1 .CONCERT_NAME{
+.container .CONCERT_1:hover .CONCERT_NAME{
     font-weight:700;
     font-style: normal;
     font-size: 16pt;
