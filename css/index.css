@@ -132,15 +132,13 @@ text{
     margin-bottom: 5px;
 }
 
-.container .CONCERT_2 .CONCERT_NAME{
-    margin-bottom: 5px !important;
-}
 
 
 .container .CONCERT_1:hover .CONCERT_NAME{
     font-weight:700;
     font-style: normal;
     font-size: 16pt;
+    margin-bottom: 5px;
     background-image: linear-gradient(to right, #1a759f,#ffffff,#1a759f,#ffffff,#1a759f);
     -webkit-background-clip: text;
     background-clip: text;
@@ -295,9 +293,7 @@ text{
         }
 
         
-.container .CONCERT_2 .CONCERT_NAME{
-    margin-bottom: 5px !important;
-}
+
 
         .DCC{
             padding-top: 1px;
@@ -311,11 +307,28 @@ text{
         }
 
         
-.container .CONCERT_2:hover .CONCERT_NAME{
+.container .CONCERT_2 .CONCERT_NAME{
     font-weight:700;
     font-style: normal;
     font-size: 16pt;
     background-image: linear-gradient(to right, #ffffff3c,#ffffff,#ffffff3c,#ffffff,#ffffff3c);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+
+    background-size: 200%;
+    background-position: -200%;
+
+    animation: animatedText 7s infinite alternate;
+
+}
+
+.container .CONCERT_1 .CONCERT_NAME{
+    font-weight:700;
+    font-style: normal;
+    font-size: 16pt;
+    margin-bottom: 5px;
+    background-image: linear-gradient(to right, #1a759f,#ffffff,#1a759f,#ffffff,#1a759f);
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
