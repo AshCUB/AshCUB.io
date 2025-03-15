@@ -226,6 +226,11 @@ text{
         flex-direction: row;
     }
     }
+
+    .CONCERT_2 .CONCERT_NUM,
+    .CONCERT_2 .CONCERT_INFO {
+        text-align: left; 
+    }
     
     @media screen and (min-width: 1500px){
         .container .CONCERT_1, .container .CONCERT_2{
