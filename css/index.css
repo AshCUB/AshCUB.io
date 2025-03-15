@@ -31,11 +31,12 @@ text{
     font-style: italic;
     font-size: 20pt;
     text-align: right;
+    font-size: 16pt;
 }
 
 
 .container .ZΩRBLAXIAN{
-    font-size: 12pt;
+    font-size: 9pt;
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -266,14 +267,14 @@ text{
         .container .ZΩRBLAXIAN{
 
             text-align: left;
-            font-size: 12pt;
+            font-size: 9pt;
             margin-left: 0;
             margin-right: auto;
         }
 
         @media screen and (width<=580px){
             .VPC{
-                font-size: 3.2vw;
+                font-size: 4.2vw;
             }
     
             .container .ZΩRBLAXIAN{
