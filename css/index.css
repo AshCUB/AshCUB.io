@@ -297,6 +297,25 @@ text{
             margin-left: 0;
             margin-right: auto;
         }
+
+        
+.container .CONCERT_2:hover .CONCERT_NAME{
+    font-weight:700;
+    font-style: normal;
+    font-size: 16pt;
+    text-align: left;
+    background-image: linear-gradient(to right, #ffffff3c,#ffffff,#ffffff3c,#ffffff,#ffffff3c);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+
+    background-size: 200%;
+    background-position: -200%;
+
+    animation: animatedText 7s infinite alternate;
+
+}
+
     }
 
 strong{
