@@ -295,6 +295,11 @@ text{
             padding-bottom: 10px;
         }
 
+        
+.container .CONCERT_2 .CONCERT_NAME{
+    margin-bottom: 5px;
+}
+
         .DCC{
             padding-top: 1px;
             display: flex;
