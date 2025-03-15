@@ -251,9 +251,8 @@ text{
             .container .CONCERT_2 .CONCERT_NUM,
             .container .CONCERT_2 .CONCERT_NAME,
             .container .CONCERT_2 .CONCERT_INFO {
-        text-align: left;
-
-        }
+                text-align: left !important;
+            }
         .container .LEFT_INFO{
             order:-1
         }
@@ -308,7 +307,6 @@ text{
     font-weight:700;
     font-style: normal;
     font-size: 16pt;
-    text-align: left !important;
     background-image: linear-gradient(to right, #ffffff3c,#ffffff,#ffffff3c,#ffffff,#ffffff3c);
     -webkit-background-clip: text;
     background-clip: text;
