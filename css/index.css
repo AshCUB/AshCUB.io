@@ -19,7 +19,7 @@ text{
 }
 
 .container{
-    font-family: "Neue Haas Grotesk Display Pro";
+    font-family: "Neue Haas Grotesk Display Pro", sans-serif;
     display: flex;
     flex-direction: column;
 }
