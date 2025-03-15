@@ -123,13 +123,16 @@ text{
     font-style: italic;
     font-size: 10pt;
     text-align: right;
-    margin-bottom: 5px;
 }
 
 .container .CONCERT_1 .CONCERT_NAME{
     font-weight:700;
     font-style: normal;
     font-size: 16pt;
+    margin-bottom: 5px;
+}
+
+.container .CONCERT_2 .CONCERT_NAME{
     margin-bottom: 5px;
 }
 
