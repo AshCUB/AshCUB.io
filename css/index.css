@@ -243,8 +243,10 @@ text{
             flex-direction: row;
         }
     }
+
+
     
-        @media screen and (width <= 750px) {
+        @media screen and (width <= 1000px) {
             .container .CONCERT_1, .container .CONCERT_2{
                 flex-direction: column;
             }
@@ -262,14 +264,30 @@ text{
         }
 
         .container .ZΩRBLAXIAN{
-            font-size: 8pt;
+
             text-align: left;
+            font-size: 12pt;
             margin-left: 0;
             margin-right: auto;
         }
 
-        .VPC{
-            font-size: 13pt;
+        @media screen and (width<=580px){
+            .VPC{
+                font-size: 3.2vw;
+            }
+    
+            .container .ZΩRBLAXIAN{
+    
+                text-align: left;
+                font-size: 2.2vw;
+                margin-left: 0;
+                margin-right: auto;
+            }
+
+            .DCC{
+                font-size: 2.2vw;
+            }
+            
         }
 
         .CONCERT_1 .PIC_BOX{
@@ -303,7 +321,6 @@ text{
             display: flex;
             position: relative;
             color: #C3CCD2;
-            font-size: 12pt;
             text-align: left;
             margin-left: 0;
             margin-right: auto;
@@ -314,7 +331,6 @@ text{
     margin-bottom: 5px;
     font-weight:700;
     font-style: normal;
-    font-size: 16pt;
     background-image: linear-gradient(to right, #ffffff3c,#ffffff,#ffffff3c,#ffffff,#ffffff3c);
     -webkit-background-clip: text;
     background-clip: text;
@@ -330,7 +346,6 @@ text{
 .container .CONCERT_1:hover .CONCERT_NAME{
     font-weight:700;
     font-style: normal;
-    font-size: 16pt;
     margin-bottom: 5px;
     background-image: linear-gradient(to right, #1a759f,#ffffff,#1a759f,#ffffff,#1a759f);
     -webkit-background-clip: text;
