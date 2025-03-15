@@ -133,7 +133,7 @@ text{
 }
 
 .container .CONCERT_2 .CONCERT_NAME{
-    margin-bottom: 5px;
+    margin-bottom: 5px !important;
 }
 
 
@@ -141,7 +141,6 @@ text{
     font-weight:700;
     font-style: normal;
     font-size: 16pt;
-    margin-bottom: 5px;
     background-image: linear-gradient(to right, #1a759f,#ffffff,#1a759f,#ffffff,#1a759f);
     -webkit-background-clip: text;
     background-clip: text;
