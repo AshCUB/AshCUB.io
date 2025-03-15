@@ -297,7 +297,7 @@ text{
 
         
 .container .CONCERT_2 .CONCERT_NAME{
-    margin-bottom: 5px;
+    margin-bottom: 5px !important;
 }
 
         .DCC{
