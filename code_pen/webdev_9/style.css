@@ -1,6 +1,6 @@
 .scroller {
-  --scrollbar-color-track: #0000ff;
-  --scrollbar-color-thumb: #ff69b4;
+  --scrollbar-color-track: #ff8800;
+  --scrollbar-color-thumb: #000000;
   --scrollbar-width: auto;
   --scrollbar-gutter: auto;
 }
