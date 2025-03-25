@@ -37,9 +37,6 @@ allLats.forEach((i, c) => {
 		strokeWidth: 4
 	})
 		.to(i, {
-		morphSVG: {
-			shape: '#globeEnd'
-		},
 		ease: 'none',
 		duration: 2,
 		repeat: -1
