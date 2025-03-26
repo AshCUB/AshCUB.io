@@ -1,0 +1,31 @@
+      body {
+        font-family: "Neue Haas Grotesk Display Pro", sans-serif;
+        background-color: #1a759f;
+        width: 350px;
+      }
+
+ 
+
+      label {
+        font-family: "Neue Haas Grotesk Display Pro", sans-serif;
+        font-weight: bold;
+        color: #FFFFFF;
+      }
+
+      div {
+        padding-bottom: 20px;
+      }
+
+      input[type="text"] {
+        font-family: "Neue Haas Grotesk Display Pro", sans-serif;
+        padding: 5px;
+        width: 150px;
+      }
+
+      p {
+        font-family: "Neue Haas Grotesk Display Pro", sans-serif;
+        color: #FFFFFF;
+        background: #10324c;
+        padding: 10px;
+        visibility: hidden;
+      }
