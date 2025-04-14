@@ -9,17 +9,18 @@
 </head>
 <body>
     <div class="app">
-        <header>Random Christmas Trivia</header>
+        <header>Random Simpson Triva</header>
         <section class="quotes">
           <div class="quote-text" id="js-quote-text"></div>
-          <div class="quote-text" id="js-answer-text"></div>
+          <div class="quote-character" id="js-character-text"></div>
+          <div class="character-image"id="js-character-image"></div>
         </section>
         <section class="controls" >
           <button type="button" id="js-new-quote" class="new-quote button">
-            Generate a new bit of trivia!
+            Give me a quote!
           </button>
-          <button type="button" id="js-tweet" class="twitter button">
-            Show me the answer!
+          <button type="button" id="js-character" class="character button">
+            Show me the character!
           </button>
           <!-- <a class="answer button" id="js-tweet" target="_blank" rel="noreferrer">Show me the answer!</a> -->
         </section>
@@ -27,18 +28,19 @@
       <script>
         
         let current = {
-            question: "",
-            answer: ""
+            quote: "",
+            character: "",
+            image: ""
         };
 
       document.querySelector('#js-new-quote').addEventListener('click', getQuote);
-      document.querySelector('#js-tweet').addEventListener('click', function()
+      document.querySelector('#js-character').addEventListener('click', function()
       {
-        displayAnswer(current.answer);
+        displayAnswer(current.character, current.image);
       });
       
 
-        var endpoint = "https://trivia.cyberwisp.com/getrandomchristmasquestion";
+        var endpoint = "https://thesimpsonsquoteapi.glitch.me/quotes";
 
 
         async function getQuote() {
@@ -49,14 +51,17 @@
         {
             throw Error(response.statusText);
         }
-
         const json = await response.json();
-        //console.log(json);
-        current.question = json.question;
-        current.answer = json.answer;
+        console.log(json);
 
-        displayQuote(json.question);
-        document.querySelector('#js-answer-text').textContent = "";
+        const quoteData = json[0];
+        current.quote = quoteData.quote;
+        current.character = quoteData.character;
+        current.image = quoteData.image;
+
+        displayQuote(current);
+        document.querySelector('#js-character-text').textContent = "";
+        document.querySelector('#js-character-image').innerHTML = "";
 
     }
         catch(err){
@@ -65,15 +70,18 @@
         }
         }
 
-    function displayQuote(quote){
+    function displayQuote(quoteData){
         const quoteText = document.querySelector('#js-quote-text');
-        quoteText.textContent = quote;
+        quoteText.textContent = quoteData.quote;
     }
 
-    function displayAnswer(answer)
+    function displayAnswer(character, image)
     {
-        const answerText = document.querySelector('#js-answer-text');
-        answerText.textContent = answer;
+        const characterText = document.querySelector('#js-character-text');
+        characterText.textContent = character;
+
+        const characterImage = document.querySelector('#js-character-image');
+        characterImage.innerHTML = `<img src="${image}" alt="${character}">`;
     }
 
     getQuote();
