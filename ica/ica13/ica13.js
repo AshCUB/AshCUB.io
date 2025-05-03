@@ -47,10 +47,17 @@ class Ball {
       this.size = size;
     }
     draw() {
+<<<<<<< HEAD
           ctx.beginPath();
           ctx.fillStyle = this.color;
           ctx.arc(this.x, this.y, this.size, 0, 2 * Math.PI);
           ctx.fill();
+=======
+        ctx.beginPath();
+        ctx.fillStyle = this.color;
+        ctx.arc(this.x, this.y, this.size, 0, 2 * Math.PI);
+        ctx.fill();
+>>>>>>> 9f30b4322475cbe4222d3e5bbcd4fcd4240fd3c0
       }
 
       update() {
@@ -86,6 +93,9 @@ class Ball {
   
     requestAnimationFrame(loop);
   }
+<<<<<<< HEAD
 
   loop();
+=======
+>>>>>>> 9f30b4322475cbe4222d3e5bbcd4fcd4240fd3c0
   
